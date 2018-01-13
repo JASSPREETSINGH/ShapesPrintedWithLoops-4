@@ -15,14 +15,21 @@ public class PrintPattern1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          for(int row=0;row<=7;row++){
-          for(int col=0;col<=7;col++){
-             if(row<col){
+          int size=7;
+          for(int row=0;row<=size;row++){
+          for(int col=0;col<=size;col++){
+             int sumRowCol;
+             sumRowCol=row +col; 
+             if(sumRowCol==size+1){
               System.out.print("# ");
+              
+             }
+             else if(row==col){
+              System.out.print("# ");   
              }
              else
              {
-                 System.out.print("");
+                 System.out.print("  ");
              }
             }
            System.out.println();
