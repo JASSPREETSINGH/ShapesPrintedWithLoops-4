@@ -22,7 +22,7 @@ public class PrintPattern1 {
              }
              else
              {
-                 System.out.print("  ");
+                 System.out.print("");
              }
             }
            System.out.println();
