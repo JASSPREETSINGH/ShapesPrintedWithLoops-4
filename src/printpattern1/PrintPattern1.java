@@ -16,8 +16,8 @@ public class PrintPattern1 {
      */
     public static void main(String[] args) {
           int size=7;
-          for(int row=0;row<=size;row++){
-          for(int col=0;col<=size;col++){
+          for(int row=1;row<=size;row++){
+          for(int col=1;col<=size;col++){
              int sumRowCol;
              sumRowCol=row +col; 
              if(sumRowCol==size+1){
@@ -25,6 +25,18 @@ public class PrintPattern1 {
               
              }
              else if(row==col){
+              System.out.print("# ");   
+             }
+             else if(row==1){
+              System.out.print("# ");   
+             }
+             else if(row==size){
+              System.out.print("# ");   
+             }
+               else if(col==size){
+              System.out.print("# ");   
+             }
+               else if(col==1){
               System.out.print("# ");   
              }
              else
